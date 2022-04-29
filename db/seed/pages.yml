@@ -1,0 +1,24 @@
+home:
+  general:
+    controller: pages
+    action: show
+    template: default
+  translations:
+    en:
+      title: Home en
+      route: "/"
+      seo_title: Home
+      seo_keyword: Home
+      seo_description: Home
+    vi:
+      title: Home vi
+      route: "/"
+      seo_title: Home
+      seo_keyword: Home
+      seo_description: Home
+    jp:
+      title: Home jp
+      route: "/"
+      seo_title: Home
+      seo_keyword: Home
+      seo_description: Homez

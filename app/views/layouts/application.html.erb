@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <% if @page.present? %>
+      <meta property="og:image" itemprop="thumbnailUrl" content="<%= @page.seo_image %>"/>
+      <meta property="og:title" content="<%= @page.title %>" />
+      <meta property="og:description" content="<%= raw @page.description %>" />
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="<%= @page.title %>">
+      <meta name="twitter:description" content="<%= raw @page.description %>">
+    <% end %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
